@@ -5,16 +5,19 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: column nowrap;
-  background-color:#BBC7D6;
+  background-color: #fc27d2;
   position: fixed;
-  top:0;
-  right:0;
-  height:100vh;
-  width:300px;
-  padding-top:2rem;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  padding-top: 2rem;
 
-   li {
+  li {
     padding: 20px 8px;
+    color: white;
+    font-family: "Niconne";
+    font-size: 24px;
   }
 `;
 
