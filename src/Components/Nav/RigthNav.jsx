@@ -19,6 +19,20 @@ const Ul = styled.ul`
     font-family: "Niconne";
     font-size: 24px;
   }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 2px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0);
+    li {
+      padding: 20px 8px;
+      color: black;
+      font-family: "Niconne";
+      font-size: 24px;
+    }
+  }
 `;
 
 const RigthNav = () => {
