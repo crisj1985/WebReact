@@ -12,7 +12,7 @@ const Ul = styled.ul`
   height: 100vh;
   width: 300px;
   padding-top: 2rem;
-  transform: ${({ open }) => open ? "translateX(0)" : "translateX(100%)"};
+  transform: ${({ open }) => (open ? "translateX(100%)" : "translateX(0%)")};
   transition: transform 0.3s ease-in-out;
 
   li {
@@ -25,11 +25,12 @@ const Ul = styled.ul`
   @media (min-width: 768px) {
     display: flex;
     flex-flow: row nowrap;
+    transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(100%)")};
     padding-top: 2px;
     width: 500px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     li {
-      padding: 20px 8px;
+      padding: 15px 12px;
       color: black;
       font-family: "Niconne";
       font-size: 24px;

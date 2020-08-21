@@ -22,21 +22,21 @@ const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: 0.26rem;
-    background-color: ${({ open }) => (open ? "#ccc" : "#333")};
+    background-color: ${({ open }) => (open ? "#333" : "#ccc")};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
 
     &:nth-child(1) {
-      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0deg)")};
+      transform: ${({ open }) => (open ? "rotate(0deg)" : "rotate(45deg)")};
     }
     &:nth-child(2) {
       transform: ${({ open }) =>
-        open ? "translateX(100%)" : "translateX(0%)"};
-      opacity: ${({ open }) => (open ? 0 : 1)};
+        open ? "translateX(0)" : "translateX(100%)"};
+      opacity: ${({ open }) => (open ? 1 : 0)};
     }
     &:nth-child(3) {
-      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0deg)")};
+      transform: ${({ open }) => (open ? "rotate(0deg)" : "rotate(-45deg)")};
     }
   }
 `;
