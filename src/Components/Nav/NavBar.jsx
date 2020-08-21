@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import RigthNav from './RigthNav';
 import Burger from './Burger';
 
 const Nav = styled.nav`
@@ -20,7 +19,6 @@ const NavBar = () => {
     return (
       <Nav>
         <div className="logo">NavBar</div>
-        <RigthNav/>
         <Burger/>
       </Nav>
     );

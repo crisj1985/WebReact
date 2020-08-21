@@ -12,6 +12,8 @@ const Ul = styled.ul`
   height: 100vh;
   width: 300px;
   padding-top: 2rem;
+  transform: ${({ open }) => open ? "translateX(0)" : "translateX(100%)"};
+  transition: transform 0.3s ease-in-out;
 
   li {
     padding: 20px 8px;
@@ -25,7 +27,7 @@ const Ul = styled.ul`
     flex-flow: row nowrap;
     padding-top: 2px;
     width: 500px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0,0,0,0);
     li {
       padding: 20px 8px;
       color: black;
@@ -35,9 +37,9 @@ const Ul = styled.ul`
   }
 `;
 
-const RigthNav = () => {
+const RigthNav = ({open}) => {
     return (
-      <Ul>
+      <Ul open={open}>
           <li>Home</li>
           <li>Productos</li>
           <li>Iniciar Sesion</li>
