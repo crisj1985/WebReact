@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import RigthNav from './RigthNav';
+import Burger from './Burger';
 
 const Nav = styled.nav`
   width: 100%;
@@ -20,6 +21,7 @@ const NavBar = () => {
       <Nav>
         <div className="logo">NavBar</div>
         <RigthNav/>
+        <Burger/>
       </Nav>
     );
 }
