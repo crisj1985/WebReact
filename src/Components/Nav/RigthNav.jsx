@@ -5,7 +5,7 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: column nowrap;
-  background-color: #fc27d2;
+  background-color: #7289da;
   position: fixed;
   top: 0;
   right: 0;
@@ -18,7 +18,7 @@ const Ul = styled.ul`
   li {
     padding: 20px 8px;
     color: white;
-    font-family: "Niconne";
+    font-family: "Gayathri", serif;
     font-size: 24px;
   }
 
@@ -26,14 +26,14 @@ const Ul = styled.ul`
     display: flex;
     flex-flow: row nowrap;
     transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(100%)")};
-    padding-top: 2px;
+    padding-top: 4px;
     width: 500px;
     background-color: rgba(0, 0, 0, 0);
     li {
       padding: 15px 12px;
       color: black;
-      font-family: "Niconne";
-      font-size: 24px;
+      font-family: "Gayathri", serif;
+      font-size: 20px;
     }
   }
 `;

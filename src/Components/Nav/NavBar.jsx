@@ -9,16 +9,20 @@ const Nav = styled.nav`
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
-
+  color: black;
+  background-color: #edebea;
   .logo {
-    padding: 15px 0;
+    padding: 08px 0;
+    font-family: "Niconne";
+    text-shadow: 3px 3px 3px #aaa;
+    font-size: 32px;
   }
 `;
 
 const NavBar = () => {
     return (
       <Nav>
-        <div className="logo">NavBar</div>
+        <div className="logo">CRD</div>
         <Burger/>
       </Nav>
     );
